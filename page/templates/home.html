@@ -6,6 +6,17 @@
     <title> Wordcount Project </title>
 </head>
 <body>
-    Django가 돌아가냐?
+    <h1>문장을 입력하고 결과 확인하기 버튼을 클릭해라</h1>
+    <form action = "{% url 'result'%}" method="GET">
+    <br>
+        <Textarea name="fulltext", id="40", rows="10"></Textarea>
+        <br>
+        <input type="submit" value="결과 확인하기">
+    </form>
+        <br>
+        <hr>
+        <a href="{% url 'about' %}">프로젝트 소개</a>
+   
+
 </body>
 </html>
